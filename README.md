@@ -3,9 +3,9 @@
 ```
 初始化css样式及常用js
 
-npm i yang-utils  
+npm i yang-init
 or  
-yarn add yang-utils  
+yarn add yang-init  
 
 vue > main.js  
 import utils from "yang-init";  
