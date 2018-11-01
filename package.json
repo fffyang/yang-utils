@@ -1,0 +1,22 @@
+{
+  "name": "yang-init",
+  "version": "1.0.1",
+  "description": "init scss and public js",
+  "main": "index.js",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fffyang/yang-utils.git"
+  },
+  "keywords": [
+    "yang1008"
+  ],
+  "author": "yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fffyang/yang-utils/issues"
+  },
+  "homepage": "https://github.com/fffyang/yang-utils#readme"
+}

@@ -1,0 +1,298 @@
+/* css初始化 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; box-sizing:border-box;}
+body { background:#fff; color:#4a4a4a; font-family:  "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; content: normal !important;}
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+
+/* 清除浮动 */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+body, html {
+    height: 100%;
+}
+
+html{
+    overflow: hidden;
+}
+
+.border-box{
+    box-sizing:border-box!important;
+}
+
+.overflow-hidden {
+    overflow: hidden!important;
+}
+
+.pull-left{
+    float: left!important;
+}
+
+.pull-right{
+    float: right!important;
+}
+
+.text-left{
+    text-align: left!important;
+}
+
+.text-center{
+    text-align: center!important;
+}
+
+.text-right{
+    text-align: right!important;
+}
+
+.relative{
+    position: relative!important;
+}
+
+.absolute{
+    position: absolute!important;
+}
+
+.fixed{
+    position: fixed!important;
+}
+
+.center-x{
+    left: 50%!important;
+    transform: translateX(-50%)!important;
+}
+
+.center-y{
+    top: 50%!important;
+    transform: translateY(-50%)!important;
+}
+
+.center-xy{
+    left: 50%!important;
+    top: 50%!important;
+    transform: translate(-50%,-50%)!important;
+}
+
+.wid-30{
+    width: 30%!important;
+}
+
+.wid-50{
+    width: 50%!important;
+}
+
+.wid-70{
+    width: 70%!important;
+}
+
+.wid-100{
+    width: 100%!important;
+}
+
+/* 单行文本超出省略... */
+.ellipsis{
+    text-overflow:ellipsis!important; 
+    overflow:hidden!important;
+    white-space:nowrap!important;
+}
+
+.w100{
+    width: 100%;
+}
+
+.h100{
+    height: 100%;
+}
+
+.pn{
+    padding: 0!important;
+}
+
+.pn{
+    padding: 0!important;
+}
+
+.mn{
+    margin: 0!important;
+}
+
+@for $i from 1 through 4 {
+    .p#{$i * 5} { padding: 5px * $i!important; };
+    .pl#{$i * 5} { padding-left: 5px * $i!important; };
+    .pr#{$i * 5} { padding-right: 5px * $i!important; };
+    .pt#{$i * 5} { padding-top: 5px * $i!important; };
+    .pb#{$i * 5} { padding-bottom: 5px * $i!important; }
+    .m#{$i * 5} { margin: 5px * $i!important; };
+    .ml#{$i * 5} { margin-left: 5px * $i!important; };
+    .mr#{$i * 5} { margin-right: 5px * $i!important; };
+    .mt#{$i * 5} { margin-top: 5px * $i!important; };
+    .mb#{$i * 5} { margin-bottom: 5px * $i!important; }
+}
+
+@for $i from 1 through 20 {
+    .z-index-#{$i} { z-index: $i!important; }
+}
+
+@for $i from 6 through 20 {
+    .fs#{$i * 2} { font-size: 2px * $i!important; }
+}
+
+.h20{
+    height: 20px!important;
+}
+
+.h30{
+    height: 30px!important;
+}
+
+.h40{
+    height: 40px!important;
+}
+
+.lh20{
+    line-height: 20px!important;
+}
+
+.lh30{
+    line-height: 30px!important;
+}
+
+.lh40{
+    line-height: 40px!important;
+}
+
+.fw200{
+    font-weight: 200!important;
+}
+
+.fw400{
+    font-weight: 400!important;
+}
+
+.fw600{
+    font-weight: 600!important;
+}
+
+.pointer{
+    cursor: pointer!important;
+}
+
+.not-allowed{
+    cursor: not-allowed!important;
+}
+
+.block{
+    display: block!important;
+}
+
+.inline-block{
+    display: inline-block!important;
+}
+
+.flex{
+    display: flex!important;
+}
+
+.inline-flex{
+    display: inline-flex!important;
+}
+
+/* css3动画 */
+.animate{
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+/* vue加载避免{{}} */
+[v-cloak] {
+    display: none;
+}
+
+/* 滚动条样式修改 */
+.el-scrollbar__wrap{
+    overflow-x: hidden;
+}
+.el-scrollbar__bar{
+    z-index: 99!important;
+}
+
+/* 按钮样式 */
+.btn-1{
+    transition: all 100ms ease-out;
+    background: #a9a6b8!important;
+    color: #fff!important;
+}
+.btn-1:hover{
+    background: #ed7601!important;
+    border: 1px solid #ed7601!important;
+}
+.btn-1:active{
+    background: #f5ab5b!important;
+}
+
+.btn-2{
+    transition: all 100ms ease-out;
+    background: #18171c!important;
+    color: #fff!important;
+}
+.btn-2:hover{
+    background: #fff!important;
+    color: #18171c!important;
+    border: 1px solid #18171c!important;
+}
+.btn-2:active{
+    color: #fff!important;
+    background: #6a6a6d!important;
+}
+
+.btn-3{
+    transition: all 100ms ease-out;
+    background: #ed7601!important;
+    color: #fff!important;
+    border: 1px solid #ed7601!important;
+}
+.btn-3:hover{
+    background: #fff!important;
+    color: #ed7601!important;
+    border: 1px solid #ed7601!important;
+}
+.btn-3:active{
+    background: #f5ab5b!important;
+}
+
+.btn-4{
+    transition: all 100ms ease-out;
+    background: #fff!important;
+    color: #18171c!important;
+    border: 1px solid #18171c!important;
+}
+.btn-4:hover{
+    background: #18171c!important;
+    color: #fff!important;
+}
+.btn-4:active{
+    color: #fff!important;
+    background: #6a6a6d!important;
+}
+
+.btn-5{
+    transition: all 100ms ease-out;
+    background: #6bc2bc!important;
+    color: #fff!important;
+    border: 1px solid #6bc2bc!important;
+}
+.btn-5:hover{
+    background: #fff!important;
+    color: #6bc2bc!important;
+}
+.btn-5:active{
+    color: #fff!important;
+    background: #a5dcd9!important;
+}
