@@ -10,7 +10,8 @@ yarn add yang-utils
 vue > main.js  
 import utils from "yang-init";  
 import "yang-init/style.scss";  
-
+  
+Vue.prototype.$utils = utils;
 ```
 scs依赖于scss预编译(持续更新)
 
