@@ -203,6 +203,10 @@ html{
     display: inline-flex!important;
 }
 
+@for $i from 1 through 10 {
+    .flex-#{$i} { flex: $i!important; }
+}
+
 /* css3动画 */
 .animate{
     -webkit-transition: all 200ms ease-out;
