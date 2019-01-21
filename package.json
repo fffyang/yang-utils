@@ -1,6 +1,6 @@
 {
   "name": "yang-init",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "init scss and public js",
   "main": "index.js",
   "scripts": {

@@ -1,5 +1,5 @@
 /* css初始化 */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; box-sizing:border-box;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { box-sizing:border-box;}
 body { background:#fff; color:#4a4a4a; font-family:  "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; }
 address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
 a { color:#555; text-decoration:none; }
@@ -56,6 +56,15 @@ body, html {
 
 .fixed{
     position: fixed!important;
+}
+
+.fixed-x{
+    justify-content: center!important;
+}
+
+.fixed-y{
+    align-items: center!important;
+    align-content: center!important;
 }
 
 .center-x{
