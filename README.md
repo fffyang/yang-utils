@@ -31,6 +31,9 @@ new Date().Format('yyyy-MM-dd hh:mm:ss')
 * arrayDedup(arr)  
 // 数组去重
 
+* isJSON(string)  
+// 判断是否json字符串
+
 * swapItem(arr,fromIndex,toIndex)  
 // 数组元素移动  
 // fromIndex: 当前元素所在位置索引, toIndex: 移动到交换的位置索引

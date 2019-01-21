@@ -1,7 +1,6 @@
 /* css初始化 */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; box-sizing:border-box;}
 body { background:#fff; color:#4a4a4a; font-family:  "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; }
-h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
 address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
 a { color:#555; text-decoration:none; }
 a:hover { text-decoration:underline; }
@@ -17,10 +16,6 @@ html {overflow-y: scroll;}
 
 body, html {
     height: 100%;
-}
-
-html{
-    overflow: hidden;
 }
 
 .border-box{

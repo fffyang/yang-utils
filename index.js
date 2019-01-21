@@ -39,7 +39,27 @@ export default {
   },
   // 数组去重
   arrayDedup(arr) {
-    return Array.from(new Set(arr));
+    return array.reduce(function(ret, cur) {
+      if(ret.indexOf(cur) === -1) ret.push(cur);
+      return ret;
+    }, []);
+  },
+  // 判断是否json字符串
+  isJSON(str) {
+    if (typeof str == "string") {
+      try {
+        // var obj = JSON.parse(str);
+        if (str.indexOf("{") > -1) {
+          return true;
+        } else {
+          return false;
+        }
+      } catch (e) {
+        console.log(e);
+        return false;
+      }
+    }
+    return false;
   },
   // 数组元素移动
   // fromIndex: 当前元素所在位置索引, toIndex: 移动到交换的位置索引
