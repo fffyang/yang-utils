@@ -38,7 +38,7 @@ export default {
     });
   },
   // 数组去重
-  arrayDedup(arr) {
+  arrayDedup(array) {
     return array.reduce(function(ret, cur) {
       if(ret.indexOf(cur) === -1) ret.push(cur);
       return ret;
