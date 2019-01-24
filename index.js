@@ -39,10 +39,16 @@ export default {
   },
   // 数组去重
   arrayDedup(array) {
-    return array.reduce(function(ret, cur) {
+    let arr = array.map(data => {
+      return JSON.stringify(data);
+    });
+    let newArr = arr.reduce(function(ret, cur) {
       if(ret.indexOf(cur) === -1) ret.push(cur);
       return ret;
     }, []);
+    return newArr.map(data => {
+      return JSON.parse(data);
+    })
   },
   // 判断是否json字符串
   isJSON(str) {
